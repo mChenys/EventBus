@@ -28,11 +28,11 @@ public class SubscriberMethod {
     String methodString;
 
     public SubscriberMethod(Method method, Class<?> eventType, ThreadMode threadMode, int priority, boolean sticky) {
-        this.method = method;
-        this.threadMode = threadMode;
-        this.eventType = eventType;
-        this.priority = priority;
-        this.sticky = sticky;
+        this.method = method; // 订阅方法
+        this.threadMode = threadMode; // 订阅线程模式
+        this.eventType = eventType; // 事件类型
+        this.priority = priority; // 优先级
+        this.sticky = sticky; // 是否是粘性事件
     }
 
     @Override
